@@ -20,12 +20,16 @@
     font-style: normal;
 }
 
+body {
+    background-color: #F5F8FF;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px auto;
-    width: 90%;
+    width: 100%;
     max-width: 1140px;
 }
 
@@ -79,5 +83,58 @@ nav {
     .shop,
     .about-us {
         display: none;
+    }
+
+    #cart {
+        margin: 10px auto;
+    }
+}
+
+#banner {
+    display: flex;
+    justify-content: space-around;
+    margin: 150px auto;
+    width: 100%;
+    max-width: 1140px;
+}
+
+#banner-text h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+#banner-text p {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#banner-text span {
+    color: #E95A08;
+}
+
+/* banner section responsive */
+
+@media screen and (max-width:576px) {
+    #banner {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    #banner img {
+        width: 100%;
+    }
+
+    #banner-text {
+        margin: 0px 5px;
+    }
+
+    #banner-text h2 {
+        font-size: 2rem;
+    }
+
+    #banner-text p {
+        font-size: 1.02rem;
     }
 }
