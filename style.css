@@ -248,6 +248,12 @@ nav {
     color: rgba(0, 0, 0, 0.5);
 }
 
+#badge img
+{
+    width: 286px;
+    height: auto;
+    transform:translate(535px,-1035px)
+}
 
 @media screen and (max-width: 576px) {
     #plants-lover-section {
@@ -277,6 +283,10 @@ nav {
     #plants-lover-section-text p,
     #plants-lover-section-text li {
         font-size: 1rem;
+    }
+    #badge
+    {
+        display: none;
     }
 
 }
