@@ -96,7 +96,7 @@ nav {
 #banner {
     display: flex;
     justify-content: space-around;
-    margin: 150px auto;
+    margin: 150px auto 120px auto;
     width: 100%;
     max-width: 1140px;
 }
@@ -148,6 +148,7 @@ nav {
     }
 }
 
+
 #plants-section-title h3 {
     font-size: 3rem;
     font-weight: 700;
@@ -182,6 +183,7 @@ nav {
     font-weight: 500;
     font-size: 1.3rem;
     text-align: center;
+    margin-top: 15px;
     margin-bottom: 0px;
 }
 
@@ -221,7 +223,6 @@ nav {
 /* resonsive plants section */
 
 @media screen and (max-width:576px) {
-
     #plants-card-container {
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
@@ -263,7 +264,7 @@ nav {
 #badge img {
     width: 286px;
     height: auto;
-    transform: translate(535px, -750px);
+    transform: translate(535px, -745px);
 }
 
 @media screen and (max-width: 576px) {
@@ -310,7 +311,7 @@ nav {
 }
 
 #latest-deal-text {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 #latest-deal-text h3 {
@@ -432,6 +433,18 @@ nav {
 /* Responsive latest deal section */
 
 @media screen and (max-width: 576px) {
+
+    #latest-deal-text h3 {
+        font-size: 2.4rem;
+    }
+
+    #latest-deal-text p {
+        font-size: 1.1rem;
+    }
+
+    #latest-deal-text {
+        margin-bottom: 65px;
+    }
 
     #latest-deal-images {
         flex-direction: column;
@@ -557,11 +570,15 @@ nav {
 footer {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: first baseline;
     gap: 10px;
     width: 100%;
     max-width: 1140px;
-    margin: 50px auto;
+    margin-top: 55px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 #footer-logo-text p {
@@ -589,13 +606,13 @@ footer {
 
 #footer-logo {
     display: flex;
-    gap: 25px;
+    gap: 30px;
     margin-left: 50px;
 }
 
 #footer-logo img {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
 }
 
 /* responsive footer */
@@ -603,13 +620,20 @@ footer {
 @media screen and (max-width: 576px) {
     footer {
         display: block;
-        margin: 0px;
+        margin: 50px auto 30px auto;
         gap: 0px;
     }
 
     #footer-links {
         grid-template-columns: repeat(1, 1fr);
         gap: 0px;
+    }
+
+    #footer-links ul {
+        margin-top: 16px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        padding-left: 0px;
     }
 
     #footer-logo {
