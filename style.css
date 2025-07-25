@@ -261,11 +261,25 @@ nav {
     color: rgba(0, 0, 0, 0.5);
 }
 
+@keyframes spin-badge
+{
+    0%
+    {
+        transform: translate(540px, -740px) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(540px, -740px) rotate(360deg);
+    }
+}
+
 #badge img {
     width: 286px;
     height: auto;
-    transform: translate(535px, -745px);
+    animation: spin-badge 5s linear 0.1s infinite;
 }
+
+
 
 @media screen and (max-width: 576px) {
 
