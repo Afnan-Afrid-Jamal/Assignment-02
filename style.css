@@ -74,6 +74,7 @@ nav {
 /* nav responsive */
 
 @media screen and (max-width: 576px) {
+
     nav {
         flex-direction: row;
         gap: 10px;
@@ -118,6 +119,12 @@ nav {
 /* banner section responsive */
 
 @media screen and (max-width:576px) {
+
+    body {
+        margin: 0;
+        padding: 0 15px;
+    }
+
     #banner {
         flex-direction: column-reverse;
         align-items: center;
@@ -214,6 +221,7 @@ nav {
 /* resonsive plants section */
 
 @media screen and (max-width:576px) {
+
     #plants-card-container {
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
@@ -259,6 +267,7 @@ nav {
 }
 
 @media screen and (max-width: 576px) {
+
     #plants-lover-section {
         flex-direction: column;
         margin: 80px auto;
@@ -423,6 +432,7 @@ nav {
 /* Responsive latest deal section */
 
 @media screen and (max-width: 576px) {
+
     #latest-deal-images {
         flex-direction: column;
         row-gap: 20px;
@@ -471,9 +481,14 @@ nav {
     align-items: center;
     margin: 100px auto;
     background-image: url("./assets/news-letter-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 533px;
-    margin: 150px 0px;
+    margin-top: 150px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     padding: 0px;
 }
 
@@ -518,6 +533,11 @@ nav {
 
 /* responsive join section */
 @media screen and (max-width: 576px) {
+
+    #join-section {
+        height: 276px;
+    }
+
     #email {
         width: 230px;
         height: 40px;
@@ -532,4 +552,67 @@ nav {
         font-size: 1.5rem;
     }
 
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    max-width: 1140px;
+    margin: 50px auto;
+}
+
+#footer-logo-text p {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+#footer-links li {
+    list-style: none;
+    white-space: nowrap;
+}
+
+#footer-links a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 3;
+    font-size: 1rem;
+}
+
+#footer-logo {
+    display: flex;
+    gap: 25px;
+    margin-left: 50px;
+}
+
+#footer-logo img {
+    width: 36px;
+    height: 36px;
+}
+
+/* responsive footer */
+
+@media screen and (max-width: 576px) {
+    footer {
+        display: block;
+        margin: 0px;
+        gap: 0px;
+    }
+
+    #footer-links {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
+
+    #footer-logo {
+        margin-left: 0px;
+    }
 }
