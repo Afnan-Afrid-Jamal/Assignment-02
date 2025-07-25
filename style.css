@@ -337,7 +337,8 @@ nav {
 
 #left-upper {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/deal-bloom.png");
-    width: 367px;
+    width: 100%;
+    max-width: 367px;
     height: 205px;
     display: flex;
     flex-direction: column;
@@ -364,7 +365,8 @@ nav {
 
 #left-lower {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/deal-ana.png");
-    width: 367px;
+    width: 100%;
+    max-width: 367px;
     height: 196px;
     display: flex;
     flex-direction: column;
@@ -391,7 +393,8 @@ nav {
 
 #right-images {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/deal-zabo.png");
-    width: 753px;
+    width: 100%;
+    max-width: 753px;
     height: 426px;
     display: flex;
     flex-direction: column;
@@ -422,7 +425,8 @@ nav {
     #latest-deal-images {
         grid-template-columns: repeat(1, 1fr);
         row-gap: 20px;
-        margin-left: 15px;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     #right-images {
@@ -430,6 +434,18 @@ nav {
         max-width: 367px;
         height: 202px;
         border-radius: 14px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #left-upper {
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #left-lower {
+        justify-content: center;
+        margin: 0 auto;
     }
 
     #right-images h5 {
@@ -443,4 +459,5 @@ nav {
     #left-lower {
         border-radius: 0px;
     }
+
 }
